@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c main.c -o $(echo $CFILE | sed 's/.$/o/')
+gcc -c $CFILE -o $(echo $CFILE | sed 's/.$/o/')
