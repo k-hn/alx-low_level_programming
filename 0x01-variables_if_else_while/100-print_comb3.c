@@ -11,8 +11,8 @@
 
 int main(void)
 {
-	char first_digit;
-	char second_digit;
+	int first_digit;
+	int second_digit;
 
 	for (first_digit = '0'; first_digit <= '9'; first_digit++)
 	{
