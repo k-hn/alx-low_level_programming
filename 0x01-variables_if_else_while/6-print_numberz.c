@@ -4,18 +4,18 @@
  * main - Entry point
  *
  * Description: A C program that prints that prints
- * all single digit numbers in base 10.
+ * all single digit numbers in base 10 using putchar.
  *
  * Return: 0 - Always success
  */
 
 int main(void)
 {
-	int count;
+	char character;
 
-	for (count = 0; count < 10; count++)
+	for (character = '0'; character <= '9'; character++)
 	{
-		printf("%d", count);
+		putchar(character);
 	}
 	putchar('\n');
 
