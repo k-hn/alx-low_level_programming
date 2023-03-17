@@ -12,12 +12,12 @@
 
 int main(void)
 {
-	char character;
+	int counter;
 
-	for (character = '0'; character <= '9'; character++)
+	for (counter = 48; counter <= 57 ; counter++)
 	{
-		putchar(character);
-		if ( character == '9')
+		putchar(counter);
+		if (counter == 57)
 		{
 			continue;
 		} else
