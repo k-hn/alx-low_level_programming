@@ -22,7 +22,7 @@ int main(void)
 			for (third_digit = second_digit + 1; third_digit <= '9'; third_digit++)
 			{
 
-			
+
 				putchar(first_digit);
 				putchar(second_digit);
 				putchar(third_digit);
