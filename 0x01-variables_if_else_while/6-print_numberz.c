@@ -11,11 +11,11 @@
 
 int main(void)
 {
-	char character;
+	int counter;
 
-	for (character = '0'; character <= '9'; character++)
+	for (counter = 48; counter <= 57; counter++)
 	{
-		putchar(character);
+		putchar(counter);
 	}
 	putchar('\n');
 
