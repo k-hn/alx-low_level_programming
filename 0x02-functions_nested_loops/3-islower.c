@@ -3,7 +3,7 @@
 /**
  * _islower - Determines if a character is lowercased or not
  *
- * @c - input character
+ * @c: input character
  *
  * Return:
  * 1 - if c is lowercased
