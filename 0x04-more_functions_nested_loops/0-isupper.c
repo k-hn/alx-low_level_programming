@@ -3,7 +3,7 @@
 /**
  * _isupper - checks for uppercase characters
  *
- * @c - input integer
+ * @c: input integer
  *
  * Return:
  * 1 - if character is lowercased
