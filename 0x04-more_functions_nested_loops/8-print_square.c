@@ -16,7 +16,7 @@ void print_square(int size)
 	{
 		_putchar('\n');
 	}
-	
+
 	/* height loop */
 	for (height = 1; height <= size; height++)
 	{
