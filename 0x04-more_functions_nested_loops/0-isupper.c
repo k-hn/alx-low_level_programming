@@ -5,7 +5,9 @@
  *
  * @c - input integer
  *
- * Return: void
+ * Return:
+ * 1 - if character is lowercased
+ * 0 - if character is not lowercased
  */
 int _isupper(int c)
 {
