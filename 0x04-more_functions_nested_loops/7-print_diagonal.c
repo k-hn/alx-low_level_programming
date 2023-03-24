@@ -3,7 +3,7 @@
 /**
  * print_diagonal - draws a diagonal line
  *
- * @n - integer input
+ * @n: integer input
  *
  * Return: void
  */
