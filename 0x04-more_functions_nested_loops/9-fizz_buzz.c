@@ -28,10 +28,10 @@ int main(void)
 			printf("%d", count);
 		}
 
-		if (num != 100)
-			printf(" ");
-		else
+		if (count == 100)
 			printf("\n");
+		else
+			printf(" ");
 	}
 
 	return (0);
