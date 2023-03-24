@@ -13,20 +13,21 @@ int main(void)
 	{
 		if (count % 3 == 0 && count % 5 == 0)
 		{
-			printf("%s\n", "FizzBuzz");
+			printf("%s ", "FizzBuzz");
 		}
 		else if (count % 3 == 0)
 		{
-			printf("%s\n", "Fizz");
+			printf("%s ", "Fizz");
 		}
 		else if (count % 5 == 0)
 		{
-			printf("%s\n", "Buzz");
+			printf("%s ", "Buzz");
 		}
 		else
 		{
-			printf("%d\n", count);
+			printf("%d ", count);
 		}
 	}
+	printf("\n");
 	return (0);
 }
