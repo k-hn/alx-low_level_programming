@@ -16,6 +16,11 @@ char *cap_string(char *s)
 
 	for (count = 0; s[count] != '\0'; count++)
 	{
+		if (count == 0 && s[count] >= 'a' && s[count] <= 'z')
+		{
+			s[count] -= 32;
+		}
+
 		for (i = 0; i < 13; i++)
 		{
 			if (s[count - 1] == spe[i] && s[count] >= 'a' && s[count] <= 'z')
