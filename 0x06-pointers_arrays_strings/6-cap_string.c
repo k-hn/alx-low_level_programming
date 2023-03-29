@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * string_toupper - changes all lowercase letters to uppercase
+ * cap_string - capitalizes all words of a string
  *
  * @s: input string
  *
- * Return: converted string
+ * Return: capitalized string
  */
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
 	int count;
 
 	for (count = 0; s[count] != '\0'; count++)
 	{
-		if (s[count] >= 'a' && s[count] <= 'z')
+		if (s[count - 1] == ' ' && s[count] >= 'a' && s[count] <= 'z')
 		{
 			s[count] = s[count] - 32;
 		}
