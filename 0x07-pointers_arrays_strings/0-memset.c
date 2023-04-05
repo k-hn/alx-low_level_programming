@@ -5,18 +5,20 @@
  * @s: pointer to memory area
  * @b: constant byte that is used to fill memory
  * @n: number of bytes to be filled
+ *
+ * Return: pointer s
  */
 #include "main.h"
 
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int count = 0;
-	
-	while(count < n)
+
+	while (count < n)
 	{
 		s[count] = b;
 		count++;
 	}
-	
+
 	return (s);
 }
