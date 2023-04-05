@@ -17,7 +17,7 @@ char *_strchr(char *s, char c)
 	for (count = 0; s[count] != '\0'; count++)
 	{
 		if (s[count] == c)
-			return (s + count);
+			return (&s[count]);
 
 	}
 	/* return null pointer to indicate c not found */
