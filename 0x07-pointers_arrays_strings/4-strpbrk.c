@@ -13,20 +13,14 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int in_count, out_count;
-	bool found = false;
 
 	for (out_count = 0; s[out_count] != '\0'; out_count++)
 	{
 		for (in_count = 0; accept[in_count] != '\0'; in_count++)
 		{
 			if (s[out_count] == accept[in_count])
-			{
-				found = true;
-				break;
-			}
+				return (s + out_count);
 		}
-		if (found)
-			break;
 	}
-	return (s + out_count);
+	return ('\0');
 }
