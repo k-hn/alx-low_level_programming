@@ -8,7 +8,6 @@
  * Return: pointer to character or NULL
  */
 #include "main.h"
-#include <stddef.h>
 
 char *_strchr(char *s, char c)
 {
@@ -21,5 +20,5 @@ char *_strchr(char *s, char c)
 
 	}
 	/* return null pointer to indicate c not found */
-	return (NULL);
+	return ('\0');
 }
