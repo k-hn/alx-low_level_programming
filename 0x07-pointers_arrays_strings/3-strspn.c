@@ -3,7 +3,7 @@
  * segment of s which consist only of bytes from accept
  *
  * @s: input string
- * @c: input accept criteria
+ * @accept: input accept criteria
  *
  * Return: calculated number of bytes.
  */
@@ -19,7 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		/* update temp_distance */
 		temp_distance = distance_travelled;
-		
+
 		/* loop through and compare against accept array */
 		/* return distance travelled once there is a failure to match */
 		for (in_count = 0; accept[in_count] != '\0'; in_count++)
@@ -32,7 +32,7 @@ unsigned int _strspn(char *s, char *accept)
 				distance_travelled += 1;
 				break;
 			}
-			
+
 		}
 		/* stop if distance_travelled isn't incrmented */
 		if (distance_travelled == temp_distance)
