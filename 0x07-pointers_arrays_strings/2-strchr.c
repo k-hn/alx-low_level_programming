@@ -20,5 +20,5 @@ char *_strchr(char *s, char c)
 
 	}
 	/* return null pointer to indicate c not found */
-	return ('\0');
+	return (s + count);
 }
