@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	long a, b;
+	int a, b;
 	
 	if (argc < 3)
 	{
@@ -18,10 +18,10 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	a = strtol(argv[1], NULL, 10);
-	b = strtol(argv[2], NULL, 10);
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
 
-	printf("%ld\n", a * b);
+	printf("%d\n", a * b);
 
 	return (0);
 }
