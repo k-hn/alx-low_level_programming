@@ -1,14 +1,11 @@
 #include <unistd.h>
 
 /**
- * _putchar
+ * _putchar - Writes a character to stdout
  *
- * Description: Writes a character to stdout
- * 
- * Param(s):
- * char c - character to print
+ * @c: character to print
  *
- * Return: 1 - sucess, -1
+ * Return: 1 - sucess, -1 - error
  */
 int _putchar(char c)
 {
