@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	char *str_copy;
 	int count;
 	int str_length = 0;
-	
+
 	if (str == NULL)
 	{
 		return (NULL);
@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	{
 		str_length++;
 	}
-	
+
 	str_copy = malloc((sizeof(char) * str_length) + 1);
 
 	/* Return null if allocation fails */
