@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * atoi - converts a string into an integer
+ * _atoi - converts a string into an integer
  *
  * @s: string input pointer
  *
