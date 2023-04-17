@@ -47,5 +47,7 @@ char *argstostr(int ac, char **av)
 		count++;
 	}
 
+	accum[count] = '\0';
+	
 	return (accum);
 }
