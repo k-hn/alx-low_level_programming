@@ -27,7 +27,7 @@ char *argstostr(int ac, char **av)
 	}
 
 	/* malloc required_size */
-	accum = malloc(sizeof(char) * (required_size + ac));
+	accum = malloc(sizeof(char) * (required_size + ac - 1));
 	if (accum == NULL)
 	{
 		return (NULL);
@@ -48,6 +48,6 @@ char *argstostr(int ac, char **av)
 	}
 
 	accum[count] = '\0';
-	
+
 	return (accum);
 }
