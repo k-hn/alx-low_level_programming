@@ -21,13 +21,13 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (count = 1; count < ac; count++)
+	for (count = 0; count < ac; count++)
 	{
 		required_size += strlen(av[count]);
 	}
 
 	/* malloc required_size */
-	accum = malloc(sizeof(char) * (required_size + (ac - 1)));
+	accum = malloc(sizeof(char) * (required_size + ac));
 	if (accum == NULL)
 	{
 		return (NULL);
@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 
 	/* begin concat */
 	count = 0;
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 		{
