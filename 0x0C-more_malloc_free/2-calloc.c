@@ -11,17 +11,24 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *arr;
+	char *arr;
+	unsigned int num_of_bytes, count;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 
-	arr = malloc(nmemb * size);
+	num_of_bytes = nmemb * size;
+	arr = malloc(num_of_bytes);
 	if (arr == NULL)
 	{
 		return (NULL);
+	}
+
+	for (count = 0; count < num_of_bytes; count++)
+	{
+		arr[count] = 0;
 	}
 
 	return (arr);
