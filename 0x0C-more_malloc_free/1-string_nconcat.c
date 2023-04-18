@@ -14,40 +14,28 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *accum;
-	unsigned int count;
-	int s1_length = strlen(s1);
-	int s2_length = strlen(s2);
+	unsigned int s1_count, s2_count, s1_length, s2_length;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
-
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-
+	s1_length = strlen(s1);
+	s2_length = strlen(s2);
+	if (n > s2_length)
+		n = s2_length;
 	accum = malloc(sizeof(*accum) * (s1_length + s2_length + 1));
 	if (accum == NULL)
-	{
 		return (NULL);
-	}
-
-	/* copy s1 */
-	for (count = 0; s1[count] != '\0'; count++)
+	for (s1_count = 0; s1[s1_count] != '\0'; s1_count++)
 	{
-		accum[count] = s1[count];
+		accum[s1_count] = s1[s1_count];
 	}
-
-	/* copy s2 */
-	for (count = 0; s2[count] != '\0' && count < n; count++)
+	for (s2_count = 0; s2[s2_count] != '\0' && s2_count < n; s2_count++)
 	{
-		accum[s1_length + count] = s2[count];
+		accum[s1_count] = s2[s2_count];
+		s1_count++;
 	}
-
-	/* null terminate string and return */
-	accum[s1_length + count] = '\0';
-
+	accum[s1_count] = '\0';
 	return (accum);
 }
