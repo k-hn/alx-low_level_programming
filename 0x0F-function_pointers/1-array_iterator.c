@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * arrary_iterator - executes function on each array member
+ * array_iterator - executes function on each array member
  *
  * @array: input array of ints
  * @size: size of array
@@ -11,13 +11,13 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t count;
-	
+
 	if (action == NULL)
 	{
 		return;
 	}
 
-        for (count = 0; count < size; count++)
+	for (count = 0; count < size; count++)
 	{
 		(*action)(array[count]);
 	}
