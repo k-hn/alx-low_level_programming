@@ -13,14 +13,14 @@ void print_all(const char * const format, ...)
 	int count = 0;
 	char *str;
 	char *sep = "";
-	
+
 	va_start(args_pointer, format);
 
 	if (format)
 	{
 		while (format[count])
 		{
-			switch(format[count])
+			switch (format[count])
 			{
 				case 's':
 					str = va_arg(args_pointer, char *);
