@@ -5,7 +5,7 @@
 /**
  * print_numbers - prints numbers, followed by a new line
  *
- * @seperator: character that seperates printed numbers
+ * @separator: character that seperates printed numbers
  * @n: number of numbers passed
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -22,7 +22,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (count = 0; count < n; count++)
 	{
-		printf("%d%s", va_arg(args_pointer, int), (count == (n - 1)) ? "" : separator);		
+		printf("%d%s", va_arg(args_pointer, int), count == (n - 1) ? "" : separator);
 	}
 	printf("\n");
 
