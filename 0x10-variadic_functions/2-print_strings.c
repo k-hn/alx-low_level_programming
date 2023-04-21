@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		separator = "";
 	}
-	
+
 	for (count = 0; count < n; count++)
 	{
 		current_string = va_arg(args_pointer, char *);
@@ -30,7 +30,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		/* print seperator unless item is the last value in list */
 		if (count < (n - 1))
 		{
-			printf("%s", separator);		
+			printf("%s", separator);
 		}
 	}
 
