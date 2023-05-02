@@ -18,14 +18,14 @@ size_t print_listint_safe(const listint_t *head)
 	size_t new_n;
 
 	temp_node = head;
-	while(temp_node)
+	while (temp_node)
 	{
 		printf("[%p] %d\n", (void *)temp_node, temp_node->n);
 		count += 1;
 		temp_node = temp_node->next;
 		list_n = head;
 		new_n = 0;
-		while(new_n < count)
+		while (new_n < count)
 		{
 			if (temp_node == list_n)
 			{
