@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * get_nodeint - gets the nth node of a linked list
+ * get_nodeint_at_index - gets the nth node of a linked list
  *
  * @head: head node of list
  * @index: index to find
